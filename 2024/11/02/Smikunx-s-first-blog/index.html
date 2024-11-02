@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Smikunx&#39;s first blog | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="线段树模板1123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990#include&lt;bits&#x2F;stdc++">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Smikunx&#39;s first blog">
+<meta property="og:url" content="http://example.com/2024/11/02/Smikunx-s-first-blog/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="线段树模板1123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990#include&lt;bits&#x2F;stdc++">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-11-02T05:12:14.000Z">
+<meta property="article:modified_time" content="2024-11-02T05:17:28.157Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-Smikunx-s-first-blog" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2024/11/02/Smikunx-s-first-blog/" class="article-date">
+  <time class="dt-published" datetime="2024-11-02T05:12:14.000Z" itemprop="datePublished">2024-11-02</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      Smikunx&#39;s first blog
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h3 id="线段树模板1"><a href="#线段树模板1" class="headerlink" title="线段树模板1"></a><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P3372">线段树模板1</a></h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ll long long</span></span><br><span class="line"><span class="meta">#<span class="keyword">ifndef</span> LOCAL</span></span><br><span class="line"><span class="keyword">constexpr</span> <span class="keyword">auto</span> maxn=<span class="number">1</span>&lt;&lt;<span class="number">21</span>;<span class="type">char</span> Cin[maxn],Cout[maxn],*p1=Cin,*p2=Cin,*p3=Cout;</span><br><span class="line"><span class="meta">#<span class="keyword">define</span> getchar()(p1==p2&amp;&amp;(p2=(p1=Cin)+fread(Cin,1,maxn,stdin),p1==p2)?EOF:*p1++)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ros()(fwrite(Cout,1,p3-Cout,stdout))</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> putchar(x)(p3==Cout+maxn&amp;&amp;(ros(),p3=Cout),*p3++=(x))</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> isdigit(x) ((x)&gt;=<span class="string">&#x27;0&#x27;</span>&amp;&amp;(x)&lt;=<span class="string">&#x27;9&#x27;</span>)</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">ROS</span>&#123;<span class="keyword">public</span>:~<span class="built_in">ROS</span>()&#123;<span class="built_in">ros</span>();&#125;&#125;_;</span><br><span class="line"><span class="meta">#<span class="keyword">endif</span></span></span><br><span class="line"><span class="function"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> type&gt;</span></span><br><span class="line"><span class="function"><span class="keyword">inline</span> type <span class="title">Miku</span><span class="params">(type&amp;x)</span></span>&#123;x=<span class="number">0</span>;<span class="function"><span class="type">bool</span> <span class="title">flag</span><span class="params">(<span class="number">0</span>)</span></span>;<span class="type">char</span> ch=<span class="built_in">getchar</span>();<span class="keyword">while</span>(!<span class="built_in">isdigit</span>(ch))flag^=ch==<span class="string">&#x27;-&#x27;</span>,ch=<span class="built_in">getchar</span>();<span class="keyword">while</span>(<span class="built_in">isdigit</span>(ch))x=(x&lt;&lt;<span class="number">1</span>)+(x&lt;&lt;<span class="number">3</span>)+(ch^<span class="number">48</span>),ch=<span class="built_in">getchar</span>();<span class="keyword">return</span> flag?x=-x:x;&#125;</span><br><span class="line"><span class="function"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> type&gt;</span></span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">void</span> <span class="title">Iliya</span><span class="params">(type x)</span></span>&#123;x&lt;<span class="number">0</span>?x=-x,<span class="built_in">putchar</span>(<span class="string">&#x27;-&#x27;</span>):<span class="number">0</span>;<span class="type">static</span> <span class="type">short</span> Stack[<span class="number">50</span>],<span class="built_in">top</span>(<span class="number">0</span>);<span class="keyword">do</span> Stack[++top]=x%<span class="number">10</span>,x/=<span class="number">10</span>;<span class="keyword">while</span>(x);<span class="keyword">while</span>(top)<span class="built_in">putchar</span>(Stack[top--]|<span class="number">48</span>);&#125;</span><br><span class="line"><span class="function"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> type,<span class="keyword">typename</span>...T&gt;</span></span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">char</span> <span class="title">Miku</span><span class="params">(<span class="type">char</span>&amp;x)</span></span>&#123;<span class="keyword">do</span> x=<span class="built_in">getchar</span>();<span class="keyword">while</span>(<span class="built_in">isspace</span>(x));<span class="keyword">return</span> x;&#125;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">void</span> <span class="title">Iliya</span><span class="params">(<span class="type">const</span> <span class="type">char</span>&amp;x)</span></span>&#123;<span class="built_in">putchar</span>(x);&#125;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">void</span> <span class="title">Miku</span><span class="params">(string&amp;x)</span></span>&#123;<span class="type">static</span> <span class="type">char</span> ch;ch=<span class="built_in">getchar</span>(),x.<span class="built_in">clear</span>();<span class="keyword">do</span> x+=ch;<span class="keyword">while</span>(!<span class="built_in">isspace</span>(ch=<span class="built_in">getchar</span>())&amp;&amp;~ch);&#125;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">void</span> <span class="title">Iliya</span><span class="params">(<span class="type">const</span> string&amp;x)</span></span>&#123;<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>,len=x.<span class="built_in">length</span>();i&lt;len;++i)<span class="built_in">putchar</span>(x[i]);&#125;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">void</span> <span class="title">Miku</span><span class="params">(<span class="type">char</span>*x)</span></span>&#123;<span class="type">static</span> <span class="type">char</span> ch;ch=<span class="built_in">getchar</span>();<span class="keyword">do</span>*(x++)=ch;<span class="keyword">while</span>(!<span class="built_in">isspace</span>(ch=<span class="built_in">getchar</span>())&amp;&amp;~ch);&#125;</span><br><span class="line"><span class="function"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> type&gt;</span></span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">void</span> <span class="title">Iliya</span><span class="params">(type*x)</span></span>&#123;<span class="keyword">while</span>(*x)<span class="built_in">putchar</span>(*(x++));&#125;</span><br><span class="line"><span class="function"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> type, <span class="keyword">typename</span>...T&gt;</span></span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">void</span> <span class="title">Miku</span><span class="params">(type&amp;x,T&amp;...y)</span></span>&#123;<span class="built_in">Miku</span>(x),<span class="built_in">Miku</span>(y...);&#125;</span><br><span class="line"><span class="function"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> type,<span class="keyword">typename</span>...T&gt;</span></span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">void</span> <span class="title">Iliya</span><span class="params">(<span class="type">const</span> type&amp;x,<span class="type">const</span> T&amp;...y)</span></span>&#123;<span class="built_in">Iliya</span>(x),<span class="built_in">putchar</span>(<span class="string">&#x27; &#x27;</span>),<span class="built_in">Iliya</span>(y...), <span class="built_in">putchar</span>(<span class="string">&#x27; &#x27;</span>);&#125;</span><br><span class="line"><span class="function"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> type,<span class="keyword">typename</span>...T&gt;</span></span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">void</span> <span class="title">Miyu</span><span class="params">(<span class="type">const</span> type&amp;x,<span class="type">const</span> T&amp;...y)</span></span>&#123;<span class="built_in">Iliya</span>(x, y...);<span class="built_in">putchar</span>(<span class="string">&#x27;\n&#x27;</span>);&#125;</span><br><span class="line"><span class="meta">#<span class="keyword">ifndef</span> LOCAL</span></span><br><span class="line"><span class="meta">#<span class="keyword">undef</span> getchar</span></span><br><span class="line"><span class="meta">#<span class="keyword">undef</span> ros</span></span><br><span class="line"><span class="meta">#<span class="keyword">undef</span> putchar</span></span><br><span class="line"><span class="meta">#<span class="keyword">endif</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> int long long</span></span><br><span class="line"><span class="type">const</span> <span class="type">int</span> N = <span class="number">1e5</span> + <span class="number">5</span>;</span><br><span class="line">ll t[N &lt;&lt; <span class="number">1</span>], add[N];</span><br><span class="line"><span class="type">int</span> h, n, m;</span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ls(now) ((now) &lt;&lt; 1)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> rs(now) ((now) &lt;&lt; 1 | 1)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> push_u(now) <span class="keyword">if</span>(!add[(now)])t[(now)]=t[ls(now)]+t[rs(now)]</span></span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">void</span> <span class="title">build</span><span class="params">(<span class="type">int</span> l, <span class="type">int</span> r)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">for</span>(l += n - <span class="number">1</span>, r += n - <span class="number">1</span>; l &gt; <span class="number">1</span>;) &#123;</span><br><span class="line">		l &gt;&gt;= <span class="number">1</span>, r &gt;&gt;= <span class="number">1</span>;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i = l; i &lt;= r; i ++) <span class="built_in">push_u</span>(i);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">void</span> <span class="title">tag</span><span class="params">(<span class="type">int</span> x, ll Add, <span class="type">int</span> len)</span> </span>&#123;</span><br><span class="line">	t[x] += Add * len; add[x] += (x &lt; n) * Add;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">void</span> <span class="title">push</span><span class="params">(<span class="type">int</span> x)</span> </span>&#123;</span><br><span class="line">	x += n - <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> k = h, len = (<span class="number">1</span> &lt;&lt; (h - <span class="number">1</span>)); k; k --, len &gt;&gt;= <span class="number">1</span>) &#123;</span><br><span class="line">		<span class="type">int</span> w = x &gt;&gt; k;</span><br><span class="line">		<span class="keyword">if</span>(add[w]) <span class="built_in">tag</span>(<span class="built_in">ls</span>(w), add[w], len), <span class="built_in">tag</span>(<span class="built_in">rs</span>(w), add[w], len), add[w] = <span class="number">0</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">Modify</span><span class="params">(<span class="type">int</span> l, <span class="type">int</span> r, ll Add)</span> </span>&#123;</span><br><span class="line">	<span class="type">int</span> L = l, R = r, len = <span class="number">1</span>;</span><br><span class="line">	<span class="built_in">push</span>(l), <span class="built_in">push</span>(r);</span><br><span class="line">	r ++;</span><br><span class="line">	<span class="keyword">for</span>(l += n - <span class="number">1</span>, r += n - <span class="number">1</span>; l &lt; r; l &gt;&gt;= <span class="number">1</span>, r &gt;&gt;= <span class="number">1</span>, len &lt;&lt;= <span class="number">1</span>) &#123;</span><br><span class="line">		<span class="keyword">if</span>(l &amp; <span class="number">1</span>) <span class="built_in">tag</span>(l ++, Add, len);</span><br><span class="line">		<span class="keyword">if</span>(r &amp; <span class="number">1</span>) <span class="built_in">tag</span>(-- r, Add, len);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">build</span>(L, L), <span class="built_in">build</span>(R, R);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> ll <span class="title">query</span><span class="params">(<span class="type">int</span> l, <span class="type">int</span> r)</span> </span>&#123;</span><br><span class="line">	<span class="built_in">push</span>(l), <span class="built_in">push</span>(r);</span><br><span class="line">	ll res = <span class="number">0</span>;</span><br><span class="line">	r ++;</span><br><span class="line">	<span class="keyword">for</span>(l += n - <span class="number">1</span>, r += n - <span class="number">1</span>; l &lt; r; l &gt;&gt;= <span class="number">1</span>, r &gt;&gt;= <span class="number">1</span>) &#123;</span><br><span class="line">		<span class="keyword">if</span>(l &amp; <span class="number">1</span>) res += t[l ++];</span><br><span class="line">		<span class="keyword">if</span>(r &amp; <span class="number">1</span>) res += t[-- r];</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> res;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">signed</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="built_in">Miku</span>(n, m);</span><br><span class="line">	h = <span class="number">32</span> - __builtin_clz(n);</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i = n; i &lt; (n &lt;&lt; <span class="number">1</span>); i ++) <span class="built_in">Miku</span>(t[i]);</span><br><span class="line">	<span class="built_in">build</span>(<span class="number">1</span>, n);</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> op, l, r, Add; m --; ) &#123;</span><br><span class="line">		<span class="built_in">Miku</span>(op, l, r);</span><br><span class="line">		<span class="keyword">if</span>(op == <span class="number">1</span>) &#123; <span class="built_in">Miku</span>(Add); <span class="built_in">Modify</span>(l, r, Add); &#125;</span><br><span class="line">		<span class="keyword">else</span> <span class="built_in">Miyu</span>(<span class="built_in">query</span>(l, r));</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2024/11/02/Smikunx-s-first-blog/" data-id="cm2zpnznx0000w4pnce5ohz55" data-title="Smikunx&#39;s first blog" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2024/11/02/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/11/">November 2024</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2024/11/02/Smikunx-s-first-blog/">Smikunx&#39;s first blog</a>
+          </li>
+        
+          <li>
+            <a href="/2024/11/02/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2024 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
